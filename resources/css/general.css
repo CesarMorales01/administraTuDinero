@@ -1,0 +1,109 @@
+.fondoCelda {
+    background-color: #eeeeee !important;
+    color: black;
+}
+
+.centerCelda {
+    text-align: center;
+}
+
+.navBarFondo {
+    background-color: #0061a9 !important;
+}
+
+.titulo {
+    color: #060606;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.roundedTable {
+    border-collapse: separate;
+    border: solid black 1px;
+    border-radius: 6px;
+}
+
+.card-flyer:hover {
+    box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.50);
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    margin-top: 4px;
+}
+
+.centerImg {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: block !important;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.superTitulo {
+    color: #0061a9;
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight: bold;
+    font-family: Helvetica;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
+}
+
+.btnVerde {
+    background-color: #006400;
+}
+
+.btnRojo {
+    background-color: #b81414;
+}
+
+.visit-button {
+  margin-top: 0.6em;
+  margin-bottom: 0.8em;
+  background-color: #0061a9;
+  background-size: cover; /* La imagen cubrirá todo el área del botón */
+  background-position: center; /* Centra la imagen en el botón */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+
+  /* Estilos del texto del botón */
+  color: #fff; /* Color del texto (blanco), ajusta si tu imagen necesita otro color de texto para contraste */
+  font-family: Arial, sans-serif; /* Fuente del texto */
+  font-size: 20px; /* Tamaño de la fuente */
+  font-weight: bold; /* Grosor de la fuente */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Sombra para el texto para mejor legibilidad */
+
+  /* Dimensiones y espaciado del botón */
+  width: 350px; /* Ancho del botón, ajusta según el tamaño deseado */
+  height: 50px; /* Alto del botón, ajusta según el tamaño deseado */
+  padding: 10px 10px; /* Espaciado interno */
+  
+  /* Borde y esquinas del botón */
+  border: none; /* Sin borde */
+  border-radius: 15px; /* Esquinas redondeadas, ajusta para más o menos redondeo */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+
+  /* Comportamiento al pasar el ratón */
+  cursor: pointer; /* Cambia el cursor a una mano al pasar por encima */
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Transición suave para efectos hover */
+}
+
+/* Efecto al pasar el ratón por encima del botón */
+.visit-button:hover {
+  transform: translateY(-3px); /* Pequeño levantamiento */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+}
+
+/* Efecto al hacer click en el botón */
+.visit-button:active {
+  transform: translateY(0); /* Vuelve a la posición original */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra más suave */
+}
+
+/* Opcional: Estilos para el contenedor del enlace si es necesario */
+.visit-website-link {
+  text-decoration: none; /* Quita el subrayado del enlace */
+  display: inline-block; /* Permite aplicar margen/padding al enlace */
+}

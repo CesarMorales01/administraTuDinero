@@ -1,0 +1,22 @@
+.contenedor-principal-porcentual {
+    max-height: 31rem; /* Altura específica del padre */
+}
+
+.contenedor-tabla-porcentual {
+    height: 50%; /* Cada hijo ocupa el 50% de la altura del padre */
+    overflow: auto; /* Útil si el contenido excede la altura */
+}
+
+.swal2-close {
+    /* Ejemplo: Cambiar el color del ícono X */
+    color: black !important; /* Rojo */
+    font-size: 2em !important; /* Hacer la X más grande */
+    top: 0 !important; /* Ajustar posición, si es necesario */
+    right: 0 !important; /* Ajustar posición, si es necesario */
+     background-color: #f0f0f0;
+     border-radius: 5px; 
+}
+
+.swal2-close:hover {
+    color: red !important; /* Azul al pasar el mouse */
+}

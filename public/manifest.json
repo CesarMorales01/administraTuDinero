@@ -1,0 +1,17 @@
+{
+    "name": "Administra tu dinero",
+    "short_name": "Administra tu dinero",
+    "start_url": "/index.php",
+    "background_color": "#ffffff",
+    "description": "Administra tu dinero",
+    "display": "standalone",
+    "theme_color": "#6777ef",
+    "icons": [
+        {
+            "src": "logo.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}
