@@ -13,7 +13,7 @@ const NuevoGasto = (params) => {
         fecha: "",
         categoria: "",
         nombreCategoria: "",
-        valor: 0,
+        valor: "",
         comentario: "",
     });
     const [categorias] = useState(params.categorias);

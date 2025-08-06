@@ -23,7 +23,7 @@ const TablaIngresos = (params) => {
                         params.datos.map((item, index) => {
                             return (
                                 <tr key={index}>
-                                    <th>{item.fecha}</th>
+                                    <th style={{whiteSpace: 'nowrap'}}>{item.fecha}</th>
                                     <td>{item.categoria}</td>
                                     <td style={{whiteSpace: 'nowrap'}}>$ {glob.formatNumber(item.valor)}</td>
                                     <td>{item.comentario}</td>

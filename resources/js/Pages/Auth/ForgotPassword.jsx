@@ -19,6 +19,9 @@ export default function ForgotPassword(params) {
                      sweetAlert("Correo no encontrado!", "warning", 2000)
                 } else {
                      sweetAlert(response.data, "success", 3000)
+                     setTimeout(() => {
+                        history.back()
+                     }, 500);
                 }
             })
             .catch((error) => {
