@@ -35,7 +35,7 @@ const NuevoIngreso = (params) => {
                 fechaHoy();
                 setIngreso((valores) => ({
                     ...valores,
-                    valor: 0,
+                    valor: "",
                     comentario: "",
                 }));
             }, 2000);

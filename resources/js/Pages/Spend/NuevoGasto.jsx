@@ -37,7 +37,7 @@ const NuevoGasto = (params) => {
                 fechaHoy();
                 setGasto((valores) => ({
                     ...valores,
-                    valor: 0,
+                    valor: "",
                     comentario: "",
                 }));
             }, 2000);

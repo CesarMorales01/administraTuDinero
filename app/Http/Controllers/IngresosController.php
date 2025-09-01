@@ -50,10 +50,10 @@ class IngresosController extends Controller
         $lista = null;
         $usuario = Auth::user()->email;
         if ($category == '') {
-            $lista = DB::table('Ingresos')->where('usuario', '=', $usuario)->whereBetween('fecha', [$finicial, $ffinal])->orderBy('fecha', 'desc')->get();
+            $lista = DB::table('Ingresos')->where('usuario', '=', $usuario)->whereBetween('fecha', [$finicial, $ffinal])->orderBy('fecha', 'desc')->orderBy('codigo', 'desc')->get();
             $ingresos = DB::table('Ingresos')->select(DB::raw('SUM(valor) AS suma'))->where('usuario', '=', $usuario)->whereBetween('fecha', [$finicial, $ffinal])->orderBy('fecha', 'desc')->get();
         } else {
-            $lista = DB::table('Ingresos')->where('usuario', '=', $usuario)->where('categoria', '=', $category)->whereBetween('fecha', [$finicial, $ffinal])->orderBy('fecha', 'desc')->get();
+            $lista = DB::table('Ingresos')->where('usuario', '=', $usuario)->where('categoria', '=', $category)->whereBetween('fecha', [$finicial, $ffinal])->orderBy('fecha', 'desc')->orderBy('codigo', 'desc')->get();
             $ingresos = DB::table('Ingresos')->select(DB::raw('SUM(valor) AS suma'))->where('usuario', '=', $usuario)->where('categoria', '=', $category)->whereBetween('fecha', [$finicial, $ffinal])->orderBy('fecha', 'desc')->get();
         }
         $ingresos = $ingresos[0]->suma;

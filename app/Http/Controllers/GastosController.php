@@ -50,10 +50,10 @@ class GastosController extends Controller
         $listaGastos = null;
         $usuario = Auth::user()->email;
         if ($category == '') {
-            $listaGastos = DB::table('Gastos')->where('usuario', '=', $usuario)->whereBetween('fecha', [$finicial, $ffinal])->orderBy('fecha', 'desc')->get();
+            $listaGastos = DB::table('Gastos')->where('usuario', '=', $usuario)->whereBetween('fecha', [$finicial, $ffinal])->orderBy('fecha', 'desc')->orderBy('codigo', 'desc')->get();
             $gastos = DB::table('Gastos')->select(DB::raw('SUM(valor) AS suma'))->where('usuario', '=', $usuario)->whereBetween('fecha', [$finicial, $ffinal])->get();
         } else {
-            $listaGastos = DB::table('Gastos')->where('usuario', '=', $usuario)->where('categoria', '=', $category)->whereBetween('fecha', [$finicial, $ffinal])->orderBy('fecha', 'desc')->get();
+            $listaGastos = DB::table('Gastos')->where('usuario', '=', $usuario)->where('categoria', '=', $category)->whereBetween('fecha', [$finicial, $ffinal])->orderBy('fecha', 'desc')->orderBy('codigo', 'desc')->get();
             $gastos = DB::table('Gastos')->select(DB::raw('SUM(valor) AS suma'))->where('usuario', '=', $usuario)->where('categoria', '=', $category)->whereBetween('fecha', [$finicial, $ffinal])->get();
         }
         $gastos = $gastos[0]->suma;
